@@ -30,9 +30,9 @@ nav li {
 }
 
 nav a {
-  border: 2px solid var(--header-font);;
+  border: 2px solid var(--header-font);
   padding: 10px;
-  color: var(--header-font);;
+  color: var(--header-font);
   text-decoration: none;
   font-size: 18px;
 }
