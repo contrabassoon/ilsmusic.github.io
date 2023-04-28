@@ -2,14 +2,15 @@
 
 /*Variables*/
 :root {
-  --header-font: #FFD700;
+  --title-color: #FFD700;
   --header_hover_bg: #555555;
+  --text-color: #CDAF95;
 }
 
 /* Style for the header section */
 header {
   background-color: #292929;
-  color: var(--header-font);
+  color: var(--title-color);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -30,9 +31,9 @@ nav li {
 }
 
 nav a {
-  border: 2px solid var(--header-font);
+  border: 2px solid var(--title-color);
   padding: 10px;
-  color: var(--header-font);
+  color: var(--title-color);
   text-decoration: none;
   font-size: 18px;
 }
@@ -54,18 +55,18 @@ nav ul ul {
 
 nav ul ul li {
   width: 200px;
-  color: var(--header-font);;
+  color: var(--title-color);;
 }
 
 nav ul li:hover > ul {
   background-color: #555555;
   display: inherit;
-  color: var(--header-font);;
+  color: var(--title-color);;
 }
 
 nav ul ul a {
   border: none;
-  color: var(--header-font);;
+  color: var(--title-color);;
   padding: 10px;
   display: block;
 }
@@ -74,7 +75,7 @@ nav ul ul a:hover {
   background-color: #555555;
   border: none;
   background-color: #333;
-  color: var(--header-font);;
+  color: var(--title-color);;
 }
 
 /* Dark theme */
@@ -85,11 +86,11 @@ body {
 }
 
 a {
-  color: var(--header-font);
+  color: var(--title-color);
 }
 
 a:hover {
-  color: var(--header-font);
+  color: var(--title-color);
 }
 
 hr {
@@ -127,4 +128,21 @@ textarea:focus,
 input:focus {
   outline: none;
   box-shadow: none;
+}
+
+/*Body*/
+body {
+  text-align: center;
+}
+
+body h1 {
+  color: var(--title-color);
+}
+
+p {
+  color: var(--text-color);
+  font-size: 18pt;
+  width: 60ch;
+  padding: 12px;
+  margin: 0 auto;
 }
