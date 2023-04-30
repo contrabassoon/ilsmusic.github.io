@@ -94,7 +94,8 @@ ul.nav_lv1 > li {
   position: relative;
 }
 
-ul.nav_lv1 > li a:hover {
+header a:hover {
+  text-decoration: underline;
   font-weight: bold;
   color: var(--header-hover-bg);
 }
@@ -112,6 +113,11 @@ ul.nav_lv2 {
 ul.nav_lv1 li:hover > ul.nav_lv2 {
   display: flex;
   flex-direction: column;
+}
+
+li:hover {
+  font-weight: bold;
+  color: var(--header-hover-bg);
 }
 
 
