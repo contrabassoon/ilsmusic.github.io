@@ -198,3 +198,10 @@ abbr, abbr:hover {
   text-decoration: none;
   cursor: inherit;
 }
+
+/*Homepage Grid*/
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px
+}
