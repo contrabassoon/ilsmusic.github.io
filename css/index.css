@@ -96,7 +96,6 @@ ul.nav_lv1 > li {
 
 header a:hover {
   text-decoration: underline;
-  font-weight: bold;
   color: var(--header-hover-bg);
 }
 
@@ -116,7 +115,6 @@ ul.nav_lv1 li:hover > ul.nav_lv2 {
 }
 
 li:hover {
-  font-weight: bold;
   color: var(--header-hover-bg);
 }
 
@@ -181,7 +179,7 @@ main {
   text-align: center;
 }
 
-main h1 {
+main h1, h2 {
   color: var(--title-color);
 }
 
@@ -202,6 +200,36 @@ abbr, abbr:hover {
 /*Homepage Grid*/
 .home-grid {
   display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  max-width: 1080px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.quote {
+  font-size: 24pt;
+  max-width: 30ch;
+}
+
+/*Video Grid*/
+.vid-grid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  max-width: 1080px;
+  display: flex;
+  margin: 0 auto;
+}
+
+main a:hover {
+  color: var(--header-hover-bg);
+}
+
+a:active {
+  font-weight: bold;
 }
