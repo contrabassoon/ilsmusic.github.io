@@ -60,7 +60,7 @@ ul.nav_lv1 li:hover > ul.nav_lv2 {
   flex-direction: column;
 }
 
-li:hover {
+header li:hover {
   color: var(--header-hover-bg);
 }
 
@@ -125,7 +125,7 @@ main {
   text-align: center;
 }
 
-main h1, h2 {
+main h1, h2, h3 {
   color: var(--title-color);
 }
 
@@ -172,6 +172,10 @@ abbr, abbr:hover {
   margin: 0 auto;
 }
 
+main {
+  color: var(--text-color);
+}
+
 main a:hover {
   color: var(--header-hover-bg);
 }
@@ -182,4 +186,33 @@ main a:visited {
 
 a:active {
   font-weight: bold;
+}
+
+main li {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 60ch;
+  display: flex;
+  margin: 0 auto;
+  text-indent: 0;
+}
+
+ul {
+  display: inline-block;
+  padding-left:0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 60ch;
+  display: flex;
+  margin: 0 auto;
+  text-indent: 0;
 }
