@@ -64,10 +64,6 @@ header li:hover {
   color: var(--header-hover-bg);
 }
 
-
-
-
-
 /* Dark theme */
 body {
   background-color: #181818;
