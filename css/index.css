@@ -125,10 +125,13 @@ main h1, h2, h3 {
   color: var(--title-color);
 }
 
+.normal_text {
+  width: 60ch;
+}
+
 p {
   color: var(--text-color);
   font-size: 18pt;
-  width: 60ch;
   padding: 12px;
   margin: 0 auto;
 }
@@ -216,6 +219,27 @@ dd {
 /*Resume Grid*/
 .resume {
   display: grid;
-  grid-template-columns: 1fr 3fr; /* 25%, 75% */
+  grid-template-columns: 1fr 2fr; /* 25%, 75% */
   gap: 20px; /* Gap between columns */
+  text-align: left;
+  word-wrap: break-word; /* or overflow-wrap: break-word; */
+}
+
+.resume_column{
+  padding: 10px; /* Adding padding for better readability */
+}
+
+.resume_column li {
+  justify-content: left;
+  list-style-type: disc;
+}
+
+.resume_list{
+  padding: 12px;
+}
+
+.resume_list_item {
+  list-style: disc;
+  list-style-type: disc;
+  display:list-item;
 }
