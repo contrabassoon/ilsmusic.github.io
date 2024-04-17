@@ -212,3 +212,10 @@ dd {
   margin: 0 auto;
   text-indent: 0;
 }
+
+/*Resume Grid*/
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* 25%, 75% */
+  gap: 20px; /* Gap between columns */
+}
