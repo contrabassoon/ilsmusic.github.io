@@ -31,11 +31,11 @@ ul.nav_lv1 {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
+  display: flex;  
   font-size: 22px;
 }
 
-ul.nav_lv1>li {
+ul.nav_lv1 > li {
   margin: 0 10px;
   position: relative;
 }
@@ -55,7 +55,7 @@ ul.nav_lv2 {
   font-size: 18px;
 }
 
-ul.nav_lv1 li:hover>ul.nav_lv2 {
+ul.nav_lv1 li:hover > ul.nav_lv2 {
   display: flex;
   flex-direction: column;
 }
@@ -121,25 +121,22 @@ main {
   text-align: center;
 }
 
-main h1,
-h2,
-h3 {
+main h1, h2, h3 {
   color: var(--title-color);
 }
 
 .normal_text {
   width: 60ch;
-  padding: 12px;
 }
 
 p {
   color: var(--text-color);
   font-size: 14pt;
+  padding: 12px;
   margin: 0 auto;
 }
 
-abbr,
-abbr:hover {
+abbr, abbr:hover {
   pointer-events: none;
   text-decoration: none;
   cursor: inherit;
@@ -202,7 +199,7 @@ main li {
 
 ul {
   display: inline-block;
-  padding-left: 0;
+  padding-left:0;
 }
 
 dt {
@@ -220,81 +217,29 @@ dd {
 }
 
 /*Resume Grid*/
-
 .resume {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  /* 25%, 75% */
-  gap: 20px;
-  /* Gap between columns */
+  grid-template-columns: 1fr 2fr; /* 25%, 75% */
+  gap: 20px; /* Gap between columns */
   text-align: left;
-  word-wrap: break-word;
-  /* or overflow-wrap: break-word; */
-  margin-left: 10%;
-  margin-right: 10%;
+  word-wrap: break-word; /* or overflow-wrap: break-word; */
 }
 
-.resume h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.resume_column{
+  padding: 10px; /* Adding padding for better readability */
 }
 
-.resume_column {
-  padding: 10px;
-  /* Adding padding for better readability */
-}
-
-.resume_column ul {
-  margin: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: grid;
+.resume_column li {
   justify-content: left;
   list-style-type: disc;
-  list-style-position: inside;
-  list-style: disc;
-
-  ul {
-    margin: 0;
-    margin-left: 20px;
-  }
 }
 
-.resume_column li:not(.date) {
-  justify-content: left;
-  margin: 0;
+.resume_list{
+  padding: 12px;
+}
+
+.resume_list_item {
+  list-style: disc;
   list-style-type: disc;
-  list-style-position: outside;
-  list-style: disc;
-  display: list-item;
-}
-
-.resume_category {
-  margin-left: 10px;
-}
-
-.aside {
-  color: #cdaf95d0;
-}
-
-.date {
-  list-style: none;
-  list-style-type: none;
-  justify-content: left;
-  color: #cdaf95d0;
-}
-
-.experience_element {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  /* 25%, 75% */
-  gap: 20px;
-  /* Gap between columns */
-  text-align: left;
-  word-wrap: break-word;
-  /* or overflow-wrap: break-word; */
-}
-
-.resume_block {
-  margin-bottom: 20px;
+  display:list-item;
 }
